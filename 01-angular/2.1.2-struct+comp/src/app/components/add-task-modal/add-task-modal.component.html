@@ -1,0 +1,49 @@
+<div id="add-task" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Add New Task</h2>
+    </div>
+    <div class="uk-modal-body">
+      <form>
+        <div class="uk-margin">
+          <input id="addTitle" class="uk-input" type="text" name="title" placeholder="Title" [(ngModel)]="title" />
+        </div>
+        <div class="uk-margin">
+          <textarea id="addDescription" class="uk-textarea" rows="5" name="description" placeholder="Description" [(ngModel)]="description"></textarea>
+        </div>
+        <div class="uk-margin">
+          <label>Due date</label>
+          <input id="addDue_date" class="uk-input" type="date" name="due_date" [(ngModel)]="dueDate" />
+        </div>
+        <div class="uk-margin">
+          <label>Priority</label>
+          <select id="addPriority" class="uk-select" name="priority" [(ngModel)]="priority">
+            <option value="LOW">Low</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HIGH">High</option>
+            <option value="URGENT">Urgent</option>
+          </select>
+        </div>
+        <div class="uk-margin">
+          <label>Category</label>
+          <select id="addCategory" class="uk-select" name="category" [(ngModel)]="category">
+            <option value="" disabled selected hidden>Choose Category</option>
+            <option *ngFor="let category of categoriesList$ | async" [value]="category.id">{{ category.name }}</option>
+          </select>
+        </div>
+        <div class="uk-margin">
+          <label>Is subtask of:</label>
+          <select id="addParent" class="uk-select" name="parent" [(ngModel)]="parent">
+            <option value="" disabled selected hidden>No Parent</option>
+            <option *ngFor="let task of tasksList$ | async" [value]="task.id">{{ task.title }}</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+      <button class="uk-button uk-button-primary" type="button" (click)="handleAddTask()">Add Task</button>
+    </div>
+  </div>
+</div>

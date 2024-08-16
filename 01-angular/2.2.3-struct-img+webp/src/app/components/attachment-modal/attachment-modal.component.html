@@ -1,0 +1,65 @@
+<div [id]="'attach' + idTask" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <form>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">Manage attachments</h2>
+      </div>
+      <fieldset class="uk-fieldset">
+        <div class="uk-modal-body">
+          <div *ngIf="attachments.length > 0">
+            <div *ngIf="hasImageAttachments">
+              <h3>Delete images:</h3>
+              <div class="slider uk-width-expand uk-flex uk-flex-center">
+                <div uk-slider>
+                  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                      <ng-container *ngFor="let attachment of attachments; let i = index">
+                        <li *ngIf="attachment.type === 'IMAGE'" class="slide">
+                          <div>
+                            <canvas></canvas>
+                            <img class="uk-blend-soft-light" [src]="'/webp/' + attachment.path_compress" alt="" uk-cover />
+                            <div class="uk-position-center uk-panel">
+                              <a uk-icon="icon: trash; ratio: 1.3;" (click)="deleteAttach(i)"></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ng-container>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+                  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="hasFilesAttachments">
+              <h3>Delete files:</h3>
+              <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+                <ng-container *ngFor="let attachment of attachments; let i = index">
+                  <div *ngIf="attachment.type !== 'IMAGE'" class="uk-text-truncate">
+                    <span uk-icon="icon: trash; ratio: 1;" (click)="deleteAttachment(i)" class="uk-icon-button"></span>
+                    {{ attachment.path_compress }}
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+          <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <div>
+              <legend>Add new files:</legend>
+              <div uk-form-custom>
+                <input type="file" aria-label="Custom controls">
+                <button class="uk-button uk-button-default" type="button" tabindex="-1">Select files</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          <button class="uk-button uk-button-primary" type="submit">Save</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

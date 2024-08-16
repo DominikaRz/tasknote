@@ -1,0 +1,18 @@
+<app-task-filter (filterChanged)="applyFilters($event)"></app-task-filter>
+<div id="taskList" uk-filter="target: .js-filter">
+  <ul class="uk-comment-list js-filter">
+    <ng-container *ngFor="let task of tasks">
+      <li role="comment" [attr.data-cat]="task.category" [attr.data-due]="task.end_at" [attr.data-done]="task.status" [attr.data-priority]="task.priority">
+        <app-task [task]="task"></app-task>
+        <ul *ngIf="task.is_parent && task.subtasks?.length" [ngClass]="'subtask' + task.id" hidden>
+          <ng-container *ngFor="let subtask of task.subtasks">
+            <li>
+              <app-task [task]="subtask"></app-task>
+            </li>
+          </ng-container>
+        </ul>
+      </li>
+    </ng-container>
+  </ul>
+</div>
+

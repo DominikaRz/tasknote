@@ -1,0 +1,1203 @@
+{
+    "count": 10,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "title": "Animation for Monographic Subject",
+            "description": "For 4-th semester subject, we must do the animation in Blender. My animation will be kind of funny. There will be UFO what will try to abduct the car.",
+            "created_at": "2024-03-04T14:31:12.526046Z",
+            "end_at": "2024-06-04T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "URGENT",
+            "is_parent": true,
+            "category": 2,
+            "parent": null,
+            "attachments": [
+                {
+                    "id": 39,
+                    "path": "animation.jpg",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "animation.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 45,
+                    "path": "image0.jpg",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "image0.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 40,
+                    "path": "reference-comic.jpg",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "reference-comic.webp",
+                    "type": "IMAGE"
+                }
+            ],
+            "subtasks": [
+                {
+                    "id": 61,
+                    "title": "Choose simple model in Blender",
+                    "description": "The main model will be: https://sketchfab.com/3d-models/unfortunate-setback-c3fdb6d605a5440f9f731796cdc43775 which is the whole scene that I will use. I also want to add some mountains to make the scene bigger and more advanced",
+                    "created_at": "2024-03-04T14:31:12.526046Z",
+                    "end_at": "2024-03-12T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 62,
+                    "title": "Modify the model",
+                    "description": "Shrink the UFO object and make it more wider for better view. ",
+                    "created_at": "2024-03-12T14:31:12.526046Z",
+                    "end_at": "2024-03-26T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 63,
+                    "title": "Design the background",
+                    "description": "There should be the picture of stars, as well as mountains that could be visible partially. There can be also the Moon added somewhere in the night sky. Try to use your own design, not the one from internet",
+                    "created_at": "2024-03-26T14:31:12.526046Z",
+                    "end_at": "2024-03-09T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 64,
+                    "title": "Design motion of objects",
+                    "description": "So here is the whole animation process,  and there are several options to choose from. The animation should be funny and relatively short (about 5 min).\n\n1 scene \nThe first view of the object is showing how huge is the spaceship (make it big, and in the reality it is small). Camera show 180 degrees angle to show it better, then move to the main scene \n2 scene\nThe spaceship is floating above the street, some cars are driving below. Then there is the light and the car is starting to lift up. Here can be view from side of the ship, and from the bottom of the car, but around the car is nothing but green light, so the right size of ship is not visible\n3 scene\nThe car was abducted and the ship wants to leave the place, but there is an error (some light is now red not green in the ship). Camera is now rotate and we see that the car is cucked from the roof to the ship, and is not fitting in the UFO.\n4 scene\nTry to lift it again few more times, but the outcome is the same. There is frustration shown in the ship.\n5 scene 1 proposition\nThe car is getting smaller after some tries and fit. Then the ship is flying away. That’s the end\n5 scene 2 proposition\nTry to get another car with the same result. Then give up and try to lift some mouse that is shown at the street ",
+                    "created_at": "2024-04-09T14:31:12.526046Z",
+                    "end_at": "2024-04-23T09:40:00Z",
+                    "status": "IN_PROGRESS",
+                    "priority": "LOW",
+                    "is_parent": true,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 65,
+                    "title": "Prepare audio for it",
+                    "description": "Mount the soundtrack for the whole animation. Sound Effect from Pixabay\nhttps://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=32464",
+                    "created_at": "2024-04-23T14:31:12.526046Z",
+                    "end_at": "2024-05-21T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 91,
+                            "path": "ambient-spacecraft-hum-33119.mp3",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "ambient-spacecraft-hum-33119.mp3",
+                            "type": "VOICE"
+                        },
+                        {
+                            "id": 93,
+                            "path": "spaceship-fly-long-sci-fi-woosh-70852.mp3",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "spaceship-fly-long-sci-fi-woosh-70852.mp3",
+                            "type": "VOICE"
+                        }
+                    ],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 80,
+            "title": "INTJ personality test",
+            "description": "INTJ (Architect) is a personality type with the Introverted, Intuitive, Thinking, and Judging traits. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.",
+            "created_at": "2024-02-20T13:10:00Z",
+            "end_at": "2025-01-12T12:00:00Z",
+            "status": "DONE",
+            "priority": "HIGH",
+            "is_parent": false,
+            "category": 5,
+            "parent": null,
+            "attachments": [
+                {
+                    "id": 85,
+                    "path": "INTJPersonality.pdf",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "INTJPersonality.pdf",
+                    "type": "FILE"
+                },
+                {
+                    "id": 82,
+                    "path": "paradoxes.jpg",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "paradoxes.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 81,
+                    "path": "intj.jpg",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "intj.webp",
+                    "type": "IMAGE"
+                }
+            ],
+            "subtasks": []
+        },
+        {
+            "id": 6,
+            "title": "Angular app",
+            "description": "Create Angular app based on the template that was created before. It must look similar and also work similar as the template file that was created. ",
+            "created_at": "2024-01-04T14:31:12.526046Z",
+            "end_at": "2024-06-04T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "is_parent": true,
+            "category": 2,
+            "parent": null,
+            "attachments": [
+                {
+                    "id": 41,
+                    "path": "taskViev-detail.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskViev-detail.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 43,
+                    "path": "taskView.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskView.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 42,
+                    "path": "Experimentation.pdf",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "Experimentation.pdf",
+                    "type": "FILE"
+                }
+            ],
+            "subtasks": [
+                {
+                    "id": 7,
+                    "title": "Task component",
+                    "description": "Task component must handle both tasks and subtasks. The editing must be enabled through the settings on the fields of title, description, due_date and priority. The description must automatically resize when user press ‘Show More’ link. The images and files must visible correctly with no missing links. ",
+                    "created_at": "2024-02-04T14:31:12.526046Z",
+                    "end_at": "2024-02-10T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 2,
+                            "path": "task1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 3,
+                            "path": "task2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 8,
+                    "title": "Attachement component",
+                    "description": "There must be modal for managing the images (attachements). From this modal the images and files can be added and deleted. The edition is not possible in this case.",
+                    "created_at": "2024-02-10T14:31:12.526046Z",
+                    "end_at": "2024-02-12T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 4,
+                            "path": "attach1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 5,
+                            "path": "attach2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 9,
+                    "title": "Filtration component",
+                    "description": "Filtration component must be able to filter all the main tasks by: status, priority, category and due_date. It must run smoothly without any missing data. ",
+                    "created_at": "2024-02-13T14:31:12.526046Z",
+                    "end_at": "2024-02-15T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 6,
+                            "path": "filter.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "filter.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 10,
+                    "title": "Navbar component",
+                    "description": "To make the app more professional add navbar with two modals. One for creating new task, and second for managing the categories, where the base CRUD can be performed. There should be also the logo of the app visible at the start of navbar.",
+                    "created_at": "2024-02-15T14:31:12.526046Z",
+                    "end_at": "2024-02-18T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 7,
+                            "path": "navbar.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "navbar.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 11,
+                    "title": "Category component",
+                    "description": "The modal that was mentioned in the navbar component. There are three tabs. One for adding, second for editing, and third for deleting the existing categories. Proper fields must be implemented in this component without missing anything.",
+                    "created_at": "2024-02-18T14:31:12.526046Z",
+                    "end_at": "2024-02-20T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": 
+                    [
+                        {
+                            "id": 8,
+                            "path": "category1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 9,
+                            "path": "category2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category2.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 10,
+                            "path": "category3.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category3.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 12,
+                    "title": "Adding new task component",
+                    "description": "Another modal that was mentioned in the navbar component. There are fields such as: title, description, priority, category and due date. Everything else that is required for app to work is assign at the backend side. ",
+                    "created_at": "2024-02-20T14:31:12.526046Z",
+                    "end_at": "2024-03-01T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 11,
+                            "path": "adding.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "adding.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 13,
+                    "title": "Main component",
+                    "description": "Combine everything in the way it is in the template. Here is also searching field for the tasks. It is the way of filtration of the tasks by looking for exact words.",
+                    "created_at": "2024-03-01T14:31:12.526046Z",
+                    "end_at": "2024-03-05T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 14,
+                    "title": "Optimizations methods",
+                    "description": "Implement various optimizations methods to fully test the website performance. ",
+                    "created_at": "2024-03-05T14:31:12.526046Z",
+                    "end_at": "2024-05-20T09:40:00Z",
+                    "status": "IN_PROGRESS",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "title": "React app",
+            "description": "Create React app based on the template that was created before. It must look similar and also work similar as the template file that was created. ",
+            "created_at": "2024-01-04T14:31:12.526046Z",
+            "end_at": "2024-06-04T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "is_parent": true,
+            "category": 2,
+            "parent": null,
+            "attachments": [
+                {
+                    "id": 41,
+                    "path": "taskViev-detail.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskViev-detail.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 42,
+                    "path": "taskView.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskView.webp",
+                    "type": "IMAGE"
+                }
+            ],
+            "subtasks": [
+                {
+                    "id": 17,
+                    "title": "Task component",
+                    "description": "Task component must handle both tasks and subtasks. The editing must be enabled through the settings on the fields of title, description, due_date and priority. The description must automatically resize when user press ‘Show More’ link. The images and files must visible correctly with no missing links. ",
+                    "created_at": "2024-02-04T14:31:12.526046Z",
+                    "end_at": "2024-02-10T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 12,
+                            "path": "task1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 13,
+                            "path": "task2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 18,
+                    "title": "Attachement component",
+                    "description": "There must be modal for managing the images (attachements). From this modal the images and files can be added and deleted. The edition is not possible in this case.",
+                    "created_at": "2024-02-10T14:31:12.526046Z",
+                    "end_at": "2024-02-12T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 14,
+                            "path": "attach1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 15,
+                            "path": "attach2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 19,
+                    "title": "Filtration component",
+                    "description": "Filtration component must be able to filter all the main tasks by: status, priority, category and due_date. It must run smoothly without any missing data. ",
+                    "created_at": "2024-02-13T14:31:12.526046Z",
+                    "end_at": "2024-02-15T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 16,
+                            "path": "filter.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "filter.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 20,
+                    "title": "Navbar component",
+                    "description": "To make the app more professional add navbar with two modals. One for creating new task, and second for managing the categories, where the base CRUD can be performed. There should be also the logo of the app visible at the start of navbar.",
+                    "created_at": "2024-02-15T14:31:12.526046Z",
+                    "end_at": "2024-02-18T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 17,
+                            "path": "navbar.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "navbar.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 21,
+                    "title": "Category component",
+                    "description": "The modal that was mentioned in the navbar component. There are three tabs. One for adding, second for editing, and third for deleting the existing categories. Proper fields must be implemented in this component without missing anything.",
+                    "created_at": "2024-02-18T14:31:12.526046Z",
+                    "end_at": "2024-02-20T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": 
+                    [
+                        {
+                            "id": 18,
+                            "path": "category1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 19,
+                            "path": "category2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category2.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 20,
+                            "path": "category3.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category3.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 22,
+                    "title": "Adding new task component",
+                    "description": "Another modal that was mentioned in the navbar component. There are fields such as: title, description, priority, category and due date. Everything else that is required for app to work is assign at the backend side. ",
+                    "created_at": "2024-02-20T14:31:12.526046Z",
+                    "end_at": "2024-03-01T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 21,
+                            "path": "adding.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "adding.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 23,
+                    "title": "Main component",
+                    "description": "Combine everything in the way it is in the template. Here is also searching field for the tasks. It is the way of filtration of the tasks by looking for exact words.",
+                    "created_at": "2024-03-01T14:31:12.526046Z",
+                    "end_at": "2024-03-05T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 24,
+                    "title": "Optimizations methods",
+                    "description": "Implement various optimizations methods to fully test the website performance. ",
+                    "created_at": "2024-03-05T14:31:12.526046Z",
+                    "end_at": "2024-05-20T09:40:00Z",
+                    "status": "IN_PROGRESS",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "title": "Svelte app",
+            "description": "Create Svelte app based on the template that was created before. It must look similar and also work similar as the template file that was created. ",
+            "created_at": "2024-01-04T14:31:12.526046Z",
+            "end_at": "2024-06-04T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "is_parent": true,
+            "category": 2,
+            "parent": null,
+            "attachments": [
+                {
+                    "id": 41,
+                    "path": "taskViev-detail.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskViev-detail.webp",
+                    "type": "IMAGE"
+                },
+                {
+                    "id": 42,
+                    "path": "taskView.png",
+                    "date_upload": "2024-01-05T12:40:39.586914Z",
+                    "text_form": "",
+                    "path_compress": "taskView.webp",
+                    "type": "IMAGE"
+                }
+            ],
+            "subtasks": [
+                {
+                    "id": 27,
+                    "title": "Task component",
+                    "description": "Task component must handle both tasks and subtasks. The editing must be enabled through the settings on the fields of title, description, due_date and priority. The description must automatically resize when user press ‘Show More’ link. The images and files must visible correctly with no missing links. ",
+                    "created_at": "2024-02-04T14:31:12.526046Z",
+                    "end_at": "2024-02-10T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 22,
+                            "path": "task1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 23,
+                            "path": "task2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "task2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 28,
+                    "title": "Attachement component",
+                    "description": "There must be modal for managing the images (attachements). From this modal the images and files can be added and deleted. The edition is not possible in this case.",
+                    "created_at": "2024-02-10T14:31:12.526046Z",
+                    "end_at": "2024-02-12T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 24,
+                            "path": "attach1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 25,
+                            "path": "attach2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "attach2.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 29,
+                    "title": "Filtration component",
+                    "description": "Filtration component must be able to filter all the main tasks by: status, priority, category and due_date. It must run smoothly without any missing data. ",
+                    "created_at": "2024-02-13T14:31:12.526046Z",
+                    "end_at": "2024-02-15T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 26,
+                            "path": "filter.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "filter.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 30,
+                    "title": "Navbar component",
+                    "description": "To make the app more professional add navbar with two modals. One for creating new task, and second for managing the categories, where the base CRUD can be performed. There should be also the logo of the app visible at the start of navbar.",
+                    "created_at": "2024-02-15T14:31:12.526046Z",
+                    "end_at": "2024-02-18T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 27,
+                            "path": "navbar.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "navbar.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 31,
+                    "title": "Category component",
+                    "description": "The modal that was mentioned in the navbar component. There are three tabs. One for adding, second for editing, and third for deleting the existing categories. Proper fields must be implemented in this component without missing anything.",
+                    "created_at": "2024-02-18T14:31:12.526046Z",
+                    "end_at": "2024-02-20T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": 
+                    [
+                        {
+                            "id": 28,
+                            "path": "category1.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category1.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 29,
+                            "path": "category2.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category2.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 30,
+                            "path": "category3.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "category3.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 32,
+                    "title": "Adding new task component",
+                    "description": "Another modal that was mentioned in the navbar component. There are fields such as: title, description, priority, category and due date. Everything else that is required for app to work is assign at the backend side. ",
+                    "created_at": "2024-02-20T14:31:12.526046Z",
+                    "end_at": "2024-03-01T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [
+                        {
+                            "id": 31,
+                            "path": "adding.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "adding.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 33,
+                    "title": "Main component",
+                    "description": "Combine everything in the way it is in the template. Here is also searching field for the tasks. It is the way of filtration of the tasks by looking for exact words.",
+                    "created_at": "2024-03-01T14:31:12.526046Z",
+                    "end_at": "2024-03-05T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 34,
+                    "title": "Optimizations methods",
+                    "description": "Implement various optimizations methods to fully test the website performance. ",
+                    "created_at": "2024-03-05T14:31:12.526046Z",
+                    "end_at": "2024-05-20T09:40:00Z",
+                    "status": "IN_PROGRESS",
+                    "priority": "MEDIUM",
+                    "is_parent": false,
+                    "category": 2,
+                    "attachments": [],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 41,
+            "title": "Magic of metals",
+            "description": "These seven metals have a few different properties when they come in direct contact with magic. The Association for the Development of Magic [here on referred to as „the association”] has studied and cataloged these effects. Below is the metal and what effect it has, as well as what it has been used for.\nMore information on The Association for the Development of Magic you can look here: /r/worldbuilding/comments/g0rmtq/the_association_for_the_development_of_magic_adm/\nMore Information on Magic here: /r/worldbuilding/comments/g06eyi/the_seven_methods/",
+            "created_at": "2024-01-04T14:31:12.526046Z",
+            "end_at": "2026-12-11T09:40:00Z",
+            "status": "DONE",
+            "priority": "LOW",
+            "is_parent": true,
+            "category": 4,
+            "parent": null,
+            "attachments": [],
+            "subtasks": [
+                {
+                    "id": 42,
+                    "title": "Silver",
+                    "description": "Silver is one of the most dangerous as it causes magic to be completely nullified when it comes in contact. Where the magic actually goes isn’t known, it is suspected that it may be turned into some „negative” magic that isn’t known how to interact with, they suspect that silver will provide the answers.\nBecause of silvers „anti-magic” properties it is commonly used in a number of ways. Silvered-x, x being some item or material, is usually done to allow for interacting with magic. Such as silver glass which allows one to see spirits, but also shows what is an illusion or not.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 43,
+                    "title": "Platinum",
+                    "description": "Platinum in known for its magic empowering effects. Whenever magic comes in contact with platinum the platinum will open a gate to the ether and release the same effect that made contact with the platinum. The longer magic stays in contact the larger the „empowering” gets, however the platinum will usually „drown” itself in its own magic, which platinum will not interact with.\nGiven its properties it seems obvious that it would be used in everything from guns and cars to wands and staffs. The Association has an entire division dedicated to improving the capabilities of platinum based tech. Sadly the rarity of platinum has meant that getting platinum tech in mass is very unlikely.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 44,
+                    "title": "Gold",
+                    "description": "Golds effects on magic are quite odd, it is believed by some that gold may have even originated due to chaos effects. When magic touches gold the effect is inverted, something meant to create heat would instead create cold, something meant to heal would instead harm. It is unknown how exactly gold does this.\nThis effect isn’t used very often. It is sometime uses as a defense, turning the enemies attack into something that could be beneficial. However, its also used by specialized mages to cast magic that they aren’t familiar with, someone, for example, could be very good at void magic but may need to use radiance in the current situation, so they would cast void magic on gold to get radiance.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 45,
+                    "title": "Tungsten",
+                    "description": "On the surface it appears to have the same effect as silver, nullifying magic. However, if you were to cast a spell on the tungsten then break the piece the spell is released. The Association has determined based on this evidence that magic used on tungsten gets absorbed.\nTungsten has frequently been used to make bullets that non-magic users could use, however, due to the rarity of tungsten these bullets are usually just used either to help out magic users, so they can save their magic for a more dire situation, or by richer upper class nobility to defend themselves in the case of an attack.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 46,
+                    "title": "Iron",
+                    "description": "Iron stops magic from passing it, but it does not nullify the effect.\nIron is used in two main capacities, to block other magic users, and to amplify the effect of a magic user. Iron is used to amplify magic by funneling all the magic into one area. Iron and platinum are commonly use in conjunction to create very powerful magic weapons.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 47,
+                    "title": "Titanium",
+                    "description": "Titanium does not interact with magic at all. That may sound odd, but it also means that magic cannot interact with it. They mutually ignore each other.\nTitanium is most commonly used to penetrate magical barriers, as they can’t stop the titanium. It is typically used as the „point” of the bullet, the rest it made of something else so that magic can be used to fire the bullet.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 48,
+                    "title": "Tin",
+                    "description": "Tin has the opposite effect of platinum. When magic comes in contact with tin a „negative gate” is opened. These negative gates aren’t very well understood.\nTin is most commonly used by teacher of magic to lessen an effect that could be dangerous. When a students first uses fire magic for example they’ll typically overdue it and could harm themselves, tin is used to make the magic weaker but retain the effect, allowing students to know what the effect is without risking harm to themselves.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-01-11T09:40:00Z",
+                    "status": "DONE",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 4,
+                    "attachments": [],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 100,
+            "title": "Be like the my grandparent cat. Just relax.",
+            "description": "One of the first photos of my grandparents cat: Lotos. No he is missing.",
+            "created_at": "2024-05-04T14:31:12.526046Z",
+            "end_at": "2024-05-11T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "LOW",
+            "is_parent": true,
+            "category": 6,
+            "parent": null,
+            "attachments": [
+                        {
+                            "id": 65,
+                            "path": "IMG_0305.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "IMG_0305.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 66,
+                            "path": "IMG_0306.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "IMG_0306.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 67,
+                            "path": "IMG_0307.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "IMG_0307.webp",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "id": 68,
+                            "path": "IMG_0309.jpg",
+                            "date_upload": "2024-01-05T12:40:39.586914Z",
+                            "text_form": "",
+                            "path_compress": "IMG_0309.webp",
+                            "type": "IMAGE"
+                        }
+                    ],
+            "subtasks": []
+        },
+        {
+            "id": 101,
+            "title": "Relaxing sounds that I capture in these years",
+            "description": null,
+            "created_at": "2024-04-04T14:31:12.526046Z",
+            "end_at": "2024-05-11T09:40:00Z",
+            "status": "TODO",
+            "priority": "LOW",
+            "is_parent": true,
+            "category": 6,
+            "parent": null,
+            "attachments": [],
+            "subtasks": [
+                {
+                    "id": 102,
+                    "title": "Sound of crickets in the mountains",
+                    "description": "Made in Lower Silesia during the trip to 'Table Mountains'.\ndate: 15.07.2018",
+                    "created_at": "2017-07-15T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [
+                        {
+                        "id": 69,
+                        "path": "Crickets.mp3",
+                        "date_upload": "2024-01-05T12:40:39.586914Z",
+                        "text_form": "",
+                        "path_compress": "Crickets.mp3",
+                        "type": "VOICE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 104,
+                    "title": "Sound of the heavy rain in my city",
+                    "description": "Made in my town in Lower Silesia when I was waiting for parents.\ndate: 30.05.2017",
+                    "created_at": "2017-07-15T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [
+                        {
+                        "id": 71,
+                        "path": "rain1.mp3",
+                        "date_upload": "2024-01-05T12:40:39.586914Z",
+                        "text_form": "",
+                        "path_compress": "rain1.mp3",
+                        "type": "VOICE"
+                        },
+                        {
+                        "id": 74,
+                        "path": "rain2.mp3",
+                        "date_upload": "2024-01-05T12:40:39.586914Z",
+                        "text_form": "",
+                        "path_compress": "rain2.mp3",
+                        "type": "VOICE"
+                        }
+                    ],
+                    "subtasks": []
+                },
+                {
+                    "id": 105,
+                    "title": "Sound of my cat (Aura) purrr",
+                    "description": "She passed away in previous year (2023). She died on cancer. \ndate: 01.03.2018\n\nTask made with memory of her",
+                    "created_at": "2017-07-15T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [
+                        {
+                        "id": 72,
+                        "path": "IMG_20210515_233314.jpg",
+                        "date_upload": "2024-01-05T12:40:39.586914Z",
+                        "text_form": "",
+                        "path_compress": "IMG_20210515_233314.webp",
+                        "type": "IMAGE"
+                        },
+                        {
+                        "id": 73,
+                        "path": "MruczenieAury.mp3",
+                        "date_upload": "2024-01-05T12:40:39.586914Z",
+                        "text_form": "",
+                        "path_compress": "MruczenieAury.mp3",
+                        "type": "VOICE"
+                        }
+                    ],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 93,
+            "title": "Wise quotes",
+            "description": "Some of the quotes I found in the internet some time ago.",
+            "created_at": "2024-09-04T14:31:12.526046Z",
+            "end_at": "2024-01-11T09:40:00Z",
+            "status": "TODO",
+            "priority": "LOW",
+            "is_parent": true,
+            "category": 6,
+            "parent": null,
+            "attachments": [],
+            "subtasks": [
+                {
+                    "id": 94,
+                    "title": "Most people tire of a lecture in ten minutes, clever people can do it in five",
+                    "description": "translate to Polish: \nwiększość ludzi jest zmęczona wykładem po dziesięciu minutach, inteligentni już po pięciu.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 95,
+                    "title": "Every complaints of his memory and no one complaints of his judgment ",
+                    "description": "translate to Polish: \nkażdy skarży się na swoją pamięć, a nikt nie skarży się na swój rozum.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 96,
+                    "title": "Examinations are formidable even for the best prepared, for the greatest fool can ask more than the wisest man can answer",
+                    "description": "translate to Polish: \negzaminy są okropne nawet dla najlepiej przygotowanych,\n gdyż największy głupiec może zadać pytanie, na które\nnajnajmądrzejszy nie będzie umiał odpowiedzieć",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 97,
+                    "title": "Education: that which discloses to the wise and disguises from the foolish their lack of understanding",
+                    "description": "translate to Polish: \nwykształcenie: odsłania przed mądrymi, a ukrywa przed głupimi niedoskonałości ich rozumu",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 98,
+                    "title": "Dictionaries are like watches: the worst is better than none, and the best cannot be expected to go quite true",
+                    "description": "translate to Polish: \nsłowniki są jak zegarki: najgorszy jest lepszy niż żaden, \nale nawet od najlepszego nie można oczekiwać całkowitej precyzji.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                },
+                {
+                    "id": 99,
+                    "title": "What is written without effort is usually read without pleasure",
+                    "description": "translate to Polish: \nto, co zostało napisane bez wysiłku, czyta się zwykle bez przyjemności.",
+                    "created_at": "2024-01-04T14:31:12.526046Z",
+                    "end_at": "2024-08-13T09:40:00Z",
+                    "status": "TODO",
+                    "priority": "LOW",
+                    "is_parent": false,
+                    "category": 6,
+                    "attachments": [],
+                    "subtasks": []
+                }
+            ]
+        },
+        {
+            "id": 49,
+            "title": "Magic of golden fluorite",
+            "description": "Chemical Formula - CaF2\nCleavage - Perfect\nColor - Yellow\nCrystal System - Cubic\nForm/Habit - Cubic, octahedral\nFracture - Flat conchoidal\nHardness - Moh's Scale 4(Fluorite is the Moh’s scale ‘defining mineral’ for 4)\nLuminescence - Blue, very strong (long wave)/ Blue (short wave)\nLuster - Vitreous\nMineral Family - Halide\nSpecific Gravity - 3.00-3.25\nStreak - White\nTransparency - Transparent to translucent\n\n\nGolden Fluorite is a stabilizing stone of the Solar Plexus that activates confidence and personal power. It aids in establishing a clear mind so thoughts can flow easily, to heighten attention to detail, increase access to learning, amplify knowledge, and enhance creative intuition and expression.\nGolden Fluorite helps attune the mind and body to a higher frequency, increasing our connection to creative wisdom by enabling proper alignment.",
+            "created_at": "2024-07-05T12:00:00Z",
+            "end_at": "2026-12-11T09:40:00Z",
+            "status": "IN_PROGRESS",
+            "priority": "LOW",
+            "is_parent": true,
+            "category": 4,
+            "parent": null,
+            "attachments": [],
+            "subtasks": []
+        }
+        
+    ]
+}

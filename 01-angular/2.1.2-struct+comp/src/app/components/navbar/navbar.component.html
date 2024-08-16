@@ -1,0 +1,57 @@
+<!--for smaller devices-->
+<div id="navbar" class="uk-hidden@xl uk-hidden@l uk-hidden@m uk-hidden@s uk-position-bottom">
+  <div uk-sticky="start: 170; position: bottom; animation: uk-animation-slide-bottom; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; end: !body; offset: 0">
+    <nav class="uk-navbar-container">
+      <div class="uk-container">
+        <div uk-navbar>
+          <a href="#filtration" class="uk-navbar-item uk-logo" uk-scroll>
+            <img [src]="logo" alt="logo" width="40" height="40"/>
+          </a>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li><a href="#manage-category" uk-toggle>Category</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a href="#add-task" class="uk-position-relative" uk-toggle>
+                  <span class="uk-icon-button" uk-icon="icon: plus"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!--for bigger devices-->
+<div id="navbar" class="uk-hidden-xs">
+  <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; end: !app-root; offset: 0">
+    <nav class="uk-navbar-container">
+      <div class="uk-container">
+        <div uk-navbar>
+          <a href="#filtration" class="uk-navbar-item uk-logo" uk-scroll>
+            <img [src]="logo" alt="logo"  width="40" height="40"/>
+          </a>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li><a href="#manage-category" uk-toggle>Category</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a href="#add-task" class="uk-position-relative" uk-toggle>
+                  <span class="uk-icon-button" uk-icon="icon: plus"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

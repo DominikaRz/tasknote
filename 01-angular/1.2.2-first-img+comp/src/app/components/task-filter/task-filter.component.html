@@ -1,0 +1,70 @@
+<div id="filtration">
+  <div class="uk-margin">
+    <form class="uk-search uk-search-default">
+      <span uk-search-icon></span>
+      <input id="searchBar" class="uk-search-input" type="search" name="search" placeholder="Search" (ngModel)="searchQuery" (ngModelChange)="onSearchQueryChange()" />
+    </form>
+  </div>
+  <div class="uk-grid-small uk-flex-middle uk-margin-large-right" uk-grid>
+    <div class="uk-width-expand">
+      <div class="uk-grid-small uk-grid-divider" uk-grid>
+        <table class="uk-table uk-table-responsive">
+          <caption>Filtration</caption>
+          <thead>
+            <tr>
+              <th class="uk-table-shrink"></th>
+              <th class="uk-table-small">Status</th>
+              <th class="uk-table-small">Priority</th>
+              <th class="uk-table-expand">Category</th>
+              <th class="uk-table-small">Due date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li uk-filter-control><a class="uk-badge">All</a></li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li uk-filter-control="[data-done='TODO']"><a href="#" style="padding: 5px;" [attr.uk-tooltip]="'Undone'">
+                    <span uk-icon="icon: check" style="border: 1px #01a5f7 solid; color: transparent;"></span></a>
+                  </li>
+                  <li uk-filter-control="[data-done='IN_PROGRESS']"><a href="#" style="padding: 5px;" [attr.uk-tooltip]="'In progress'">
+                    <span uk-icon="icon: check" style="border: 1px #01a5f7 solid;"></span></a>
+                  </li>
+                  <li uk-filter-control="[data-done='DONE']"><a href="#" style="padding: 5px;" [attr.uk-tooltip]="'Done'">
+                    <span uk-icon="icon: check" style="border: 1px #01a5f7 solid; background-color: #01a5f7;"></span></a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li *ngFor="let priority of priorities" attr.uk-filter-control="[data-priority='{{priority}}']">
+                    <a href="#" class="dot-priority" [style.background-color]="getPriorityColor(priority)" [ngStyle]="{'box-shadow': 'rgb(0, 0, 0) -7px 0px 5px -2px'}" [attr.uk-tooltip]="priority"></a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li *ngFor="let category of categories"attr.uk-filter-control="[data-cat='{{category.id}}']">
+                    <a href="#" class="uk-badge" [style.background-color]="category.color" [attr.uk-tooltip]="category.name"></a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <span class="uk-active" uk-filter-control="sort: data-due">
+                  <a class="uk-icon-link" href="#" uk-icon="icon: arrow-down" aria-label="Sort ascending"></a>
+                </span>
+                <span uk-filter-control="sort: data-due; order: desc">
+                  <a class="uk-icon-link" href="#" uk-icon="icon: arrow-up" aria-label="Sort descending"></a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

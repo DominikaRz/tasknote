@@ -1,0 +1,160 @@
+<article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment" [ngStyle]="{'border-color': getCategoryColor(task.category)}">
+  <div class="task uk-margin-large uk-card uk-card-default {{task.priority.toLowerCase()}}">
+    <div class="settings uk-position-top-right uk-position-medium@l uk-hidden-hover">
+      <div class="uk-inline uk-align-right">
+        <button class="uk-button uk-button-text" type="button">
+          <span uk-icon="icon: cog"></span> Settings
+        </button>
+        <div uk-dropdown="mode: click">
+          <ul class="uk-iconnav uk-iconnav-vertical">
+            <li><a (click)="setId(task.id)" href="#attach{{task.id}}" uk-toggle><span uk-icon="icon: settings"></span> Attachments</a></li>
+            <li><a class="uk-link-muted" (click)="toggleEdit()"><span uk-icon="icon: pencil"></span> Edit task</a></li>
+            <li><a id="dialog{{task.id}}" (click)="openConfirmationDialog(task.id)" href="#"><span uk-icon="icon: trash"></span> Delete task</a></li>
+            <li><a class="uk-link-muted" (click)="openSubtaskModal()"><span uk-icon="icon: plus"></span> Add Subtask</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!isEditing">
+      <header class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-2@l uk-child-width-1-2@xl" uk-grid>
+        <div>
+          <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+            <div class="uk-width-auto">
+              <input type="checkbox" name="status" [checked]="task.status !== 'TODO'" (change)="toggleStatus($event)" />
+            </div>
+            <div class="uk-width-expand uk-text-left uk-margin-small-left">
+              <h2 class="title uk-align-left" [ngStyle]="{'text-decoration': task.status === 'DONE' ? 'line-through' : 'none'}" name="title" [class.done]="task.status === 'DONE'">
+                {{ task.title }}
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-text-center" uk-grid>
+            <div>
+              <div>
+                <p>{{ percentage.toFixed(0) }}% completed
+                  <span *ngIf="task.attachments.length > 0" id="js-lightbox{{task.id}}" (click)="openLightbox()" class="uk-icon uk-icon-image js-lightbox{{task.id}}" style="background-image: url(/img/paperclip.svg);"></span>
+                </p>
+              </div>
+              <div>
+                <span *ngIf="task.description" class="uk-button uk-button-text" style="margin: 0px !important;" (click)="toggleDescription()">
+                  {{ showDescription ? 'Hide description' : 'Show description' }}
+                </span>
+              </div>
+              <div class="uk-hidden uk-visible@s"></div>
+            </div>
+            <div>
+              <div>
+                <h4 type="date" class="due-date uk-text-right uk-text-left@m uk-margin-medium-left@s">
+                  {{ formattedEndDate }}
+                </h4>
+              </div>
+              <div></div>
+              <div class="uk-visible@m uk-visible@l uk-visible@xl js-lightbox{{task.id}}" (click)="openLightbox()" uk-slider>
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                  <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m">
+                    <div *ngFor="let attach of task.attachments">
+                      <div *ngIf="attach.type === 'IMAGE'">
+                        <div class="uk-cover-container">
+                          <canvas></canvas>
+                          <img [src]="'/compress/' + attach.path" alt="{{ attach.path }}" uk-cover />
+                        </div>
+                      </div>
+                      <div *ngIf="attach.type === 'FILE'">
+                        <div class="uk-cover-container">
+                          <canvas></canvas>
+                          <iframe [src]="('/compress/' + attach.path) | safe" uk-responsive uk-cover uk-video="automute: true"></iframe>
+                        </div>
+                      </div>
+                      <div *ngIf="attach.type === 'VOICE'">
+                        <div class="uk-cover-container" style="border: black 2px solid">
+                          <canvas></canvas>
+                          <video [src]="'/compress/' + attach.path" uk-responsive uk-cover class="uk-position-center" uk-video="autoplay: false" poster="/img/play-button.svg" style="width: 2vw;"></video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div *ngIf="task.description">
+        <div class="description uk-child-width-1-1 uk-card-body uk-text-left uk-padding-medium uk-margin-small-bottom" uk-grid [hidden]="!showDescription">
+          <div class="descript">
+            <p>{{ task.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="third uk-text-center" uk-grid>
+        <div class="uk-width-1-6@m uk-width-1-2 uk-position-bottom-right uk-text-right uk-position-small">
+          <a *ngIf="task.is_parent" href="" class="uk-button uk-button-text uk-link-muted" attr.uk-toggle="target: .subtask{{task.id}}">Show subtasks</a>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isEditing">
+      <form>
+        <header class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-2@l uk-child-width-1-2@xl" uk-grid>
+          <div>
+            <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+              <div class="uk-width-auto">
+                <input id="status{{task.id}}" type="checkbox" name="status" disabled [checked]="true"/>
+              </div>
+              <div class="uk-width-expand uk-text-left uk-margin-small-left">
+                <textarea id="title{{task.id}}" class="title uk-textarea" name="title" [(ngModel)]="title" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-text-center" uk-grid>
+              <div>
+                <div>
+                  <div class="uk-margin">
+                    <select id="priority{{task.id}}" class="uk-select" name="category" [(ngModel)]="category">
+                      <option *ngFor="let cat of categories" [value]="cat.id" [selected]="cat.id === task.category">{{ cat.name }}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input id="due_date{{task.id}}" type="date" name="due_date" class="due-date uk-input" [(ngModel)]="dueDate"/>
+                </div>
+              </div>
+                <div class="uk-hidden uk-visible@s"></div>
+            </div>
+            <div>
+              <div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                  <label><input id="priorityL{{task.id}}" class="uk-radio" type="radio" name="radio" value="LOW" [(ngModel)]="priority">&nbsp;Low</label>
+                  <label><input id="priorityM{{task.id}}" class="uk-radio" type="radio" name="radio" value="MEDIUM" [(ngModel)]="priority">&nbsp;Medium</label>
+                  <label><input id="priorityH{{task.id}}" class="uk-radio" type="radio" name="radio" value="HIGH" [(ngModel)]="priority">&nbsp;High</label>
+                  <label><input id="priorityU{{task.id}}" class="uk-radio" type="radio" name="radio" value="URGENT" [(ngModel)]="priority">&nbsp;Urgent</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="descript" class="description uk-child-width-1-1 uk-card-body uk-text-left uk-padding-medium uk-margin-small-bottom" uk-grid>
+          <div class="descript">
+            <textarea id="description{{task.id}}" class="descr uk-textarea" rows="3" name="description" [(ngModel)]="description"></textarea>
+          </div>
+        </div>
+        <div class="third uk-text-center" uk-grid>
+          <div class="uk-width-1-6@m uk-width-1-2 uk-position-bottom-right uk-text-right uk-position-small">
+            <div class="uk-flex">
+              <button class="uk-button uk-button-default" type="button" (click)="toggleEdit()">Cancel</button>
+              <button class="uk-button uk-button-primary" type="button" (click)="saveTask()">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</article>
+<app-attachment-modal [idTask]="task.id" [attachments]="task.attachments"></app-attachment-modal>

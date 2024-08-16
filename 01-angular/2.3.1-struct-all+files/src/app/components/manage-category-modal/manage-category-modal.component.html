@@ -1,0 +1,73 @@
+<div id="manage-category" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <ul uk-tab>
+      <li><a href="#">Add</a></li>
+      <li><a href="#">Update</a></li>
+      <li><a href="#">Delete</a></li>
+    </ul>
+    <ul class="uk-switcher uk-margin">
+      <li>
+        <div class="uk-modal-header">
+          <h2 class="uk-modal-title">Add new category</h2>
+        </div>
+        <form>
+          <fieldset class="uk-fieldset">
+            <div class="uk-modal-body">
+              <div class="uk-margin">
+                <label>Category name
+                  <input id="addCatName" class="uk-input" type="text" placeholder="Category name" [(ngModel)]="newCategoryName" name="newCategoryName">
+                </label>
+              </div>
+              <div class="uk-margin">
+                <label>Color of category:
+                  <input id="addCatColor" class="uk-input uk-margin-small-left" name="newCategoryColor" type="color" [(ngModel)]="newCategoryColor">
+                </label>
+              </div>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              <button class="uk-button uk-button-primary" type="button" (click)="handleAddCategory()">Save</button>
+            </div>
+          </fieldset>
+        </form>
+      </li>
+      <li>
+        <div class="uk-modal-header">
+          <h2 class="uk-modal-title">Update category</h2>
+        </div>
+        <div class="uk-modal-body">
+          <form class="uk-grid-small">
+            <legend class="uk-legend">Edit Category</legend>
+            <div class="uk-margin">
+              <select id="chooseCategory" class="uk-select" name="selectedCategoryId" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange($event)">
+                <option value="" disabled>Select Category</option>
+                <option *ngFor="let category of categoriesList" [value]="category.id">{{ category.name }}</option>
+              </select>
+            </div>
+            <div class="uk-margin">
+              <input id="updCatName" class="uk-input" type="text" name="selectedCategoryName" placeholder="Category Name" [(ngModel)]="selectedCategoryName">
+            </div>
+            <div class="uk-margin">
+              <input id="updCatColor" class="uk-input" name="selectedCategoryColor" type="color" [(ngModel)]="selectedCategoryColor">
+            </div>
+            <button class="uk-button uk-button-primary" type="button" (click)="handleUpdateCategory()">Update Category</button>
+          </form>
+        </div>
+      </li>
+      <li>
+        <div class="uk-modal-header">
+          <h2 class="uk-modal-title">Delete category</h2>
+        </div>
+        <div class="uk-modal-body">
+          <ul class="uk-list uk-margin">
+            <li *ngFor="let category of categoriesList">
+              <a uk-icon="icon: trash; ratio: 1;" (click)="deleteCategory(category.id)" class="uk-icon-button dial-cat"></a>
+              <span class="dot-category" [style.background-color]="category.color"></span> {{ category.name }}
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

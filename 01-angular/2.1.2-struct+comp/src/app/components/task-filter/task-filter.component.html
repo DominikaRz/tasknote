@@ -1,0 +1,73 @@
+<div id="filtration">
+  <div class="uk-margin">
+    <form class="uk-search uk-search-default">
+      <span uk-search-icon></span>
+      <input
+        id="searchBar"
+        class="uk-search-input"
+        type="search"
+        name="search"
+        placeholder="Search"
+        (input)="onSearchQueryChange($event)"
+      />
+    </form>
+  </div>
+  <div class="uk-grid-small uk-flex-middle uk-margin-large-right" uk-grid>
+    <div class="uk-width-expand">
+      <div class="uk-grid-small uk-grid-divider" uk-grid>
+        <table class="uk-table uk-table-responsive">
+          <caption>Filtration</caption>
+          <thead>
+            <tr>
+              <th class="uk-table-shrink"></th>
+              <th class="uk-table-small">Status</th>
+              <th class="uk-table-small">Priority</th>
+              <th class="uk-table-expand">Category</th>
+              <th class="uk-table-small">Due date</th>
+            </tr>
+          </thead><!---->
+          <tbody>
+            <tr>
+              <td>
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li uk-filter-control><a class="uk-badge">All</a></li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li *ngFor="let status of statuses" [attr.uk-filter-control]="'[data-done=' + status.value + ']'">
+                    <a href="#" style="padding: 5px;" [attr.uk-tooltip]="status.label.toLocaleLowerCase()">
+                      <span uk-icon="icon: check" [ngStyle]="status.style"></span>
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li *ngFor="let priority of priorities" [attr.uk-filter-control]="'[data-priority=' + priority.value + ']'">
+                    <a href="#" [attr.uk-tooltip]="priority.label" [ngStyle]="priority.style"></a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                  <li *ngFor="let category of categories" [attr.uk-filter-control]="'[data-cat=\'' + category.id + '\']'">
+                    <a href="#" class="uk-badge" [style.background-color]="category.color" [attr.uk-tooltip]="category.name"></a>
+                  </li>
+                </ul>
+              </td>
+              <td class="divide">
+                <span [class.uk-active]="sortOrder === 'asc'" uk-filter-control="sort: data-due">
+                  <a class="uk-icon-link" href="#" uk-icon="icon: arrow-down" aria-label="Sort ascending" (click)="setSortOrder('asc')"></a>
+                </span>
+                <span [class.uk-active]="sortOrder === 'desc'" uk-filter-control="sort: data-due; order: desc">
+                  <a class="uk-icon-link" href="#" uk-icon="icon: arrow-up" aria-label="Sort descending" (click)="setSortOrder('desc')"></a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

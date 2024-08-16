@@ -1,0 +1,17 @@
+textarea {
+  font-size: 1.1rem;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled {
+  background-color: transparent;
+  color: #1c1c1d;
+  border-color: transparent;
+}
+
+.uk-input { padding: 0px !important; }
+
+#add-task .uk-input { padding: 0 10px !important; }
