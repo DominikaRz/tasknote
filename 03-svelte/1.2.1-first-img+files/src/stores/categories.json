@@ -1,0 +1,27 @@
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 2,
+            "name": "implementation",
+            "color": "#8fdfe3"
+        },
+        {
+            "id": 4,
+            "name": "magic",
+            "color": "#c5f5ab"
+        },
+        {
+            "id": 5,
+            "name": "about",
+            "color": "#e6bfb8"
+        },
+        {
+            "id": 6,
+            "name": "relax",
+            "color": "#bbbbee"
+        }
+    ]
+}
